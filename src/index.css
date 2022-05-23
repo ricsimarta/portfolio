@@ -53,7 +53,6 @@ body {
 
 /* --- HEADER START --- */
 
-
 header {
   z-index: 10;
   position: fixed;
@@ -91,6 +90,7 @@ header nav button {
   font-size: 1.2em;
   border: 1px solid rgba(0, 0, 0, 1);
   padding: 4px;
+  gap: 5px;
   transition: all 0.3s ease;
 }
 
@@ -154,7 +154,7 @@ header .links {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 
 header .links button {
@@ -192,6 +192,7 @@ header .links img.LinkedIn {
 
 header .links button:hover>img.LinkedIn {
   filter: invert(0%); 
+  border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (max-width: 800px) {
@@ -466,7 +467,8 @@ p.portfolioText {
 
 .website {
   position: relative;
-  width: max(23vw, 320px);
+  width: 80vmin;
+  max-width: 480px;
 
   margin-bottom: 200px;
 }
@@ -483,7 +485,8 @@ section#Portfolio .imageContainer {
   position: relative;
 
   width: 100%;
-  height: max(calc(23vw * 9 / 16), 180px)
+  height: 45vmin;
+  max-height: 270px;
 }
 
 section#Portfolio .imageContainer~.stacksContainer {
@@ -498,7 +501,7 @@ section#Portfolio .imageContainer~.stacksContainer {
 
 section#Portfolio .imageContainer:hover~.stacksContainer {
   opacity: 1;
-  top: max(calc((23vw * 9) / 16 + 30px), 210px);
+  top: min(calc(45vmin + 40px), 300px);
   transition: all 0.3s ease;
 
   color: #000;
@@ -524,9 +527,10 @@ section#Portfolio .imageText {
 
   padding: 12px;
 
+  font-size: clamp(0.55rem, 3vw, 1.2rem);
   color: #fff;
   background-color: #000;
-
+  
   transition: all 0.3s ease;
 }
 
@@ -586,3 +590,63 @@ section#Portfolio .logoContainer .logo p.logoText {
 }
 
 /* --- PORTFOLIO END --- */
+
+
+
+/* --- CONTACT START --- */
+
+section#Contact p.contact {
+  font-size: 36px;
+}
+
+section#Contact form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+form input {
+  width: 90%;
+
+  padding: 10px;
+
+  background-color: #fff;
+}
+
+form textarea {
+  width: 90%;
+  min-height: 150px;
+
+  padding: 10px;
+  
+  background-color: #fff;
+}
+
+form button {
+  width: 100px;
+  padding: 10px;
+
+  font-size: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.captcha {
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 50px;
+}
+
+/* --- CONTACT END --- */
