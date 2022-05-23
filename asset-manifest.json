@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.cbd2219e.css",
+    "main.js": "/portfolio/static/js/main.d2e9b522.js",
+    "static/media/pizza_order.png": "/portfolio/static/media/pizza_order.600036491902d1514e57.png",
+    "static/media/beerlak.png": "/portfolio/static/media/beerlak.e0de7f1b0581598051ee.png",
+    "static/media/background.jpg": "/portfolio/static/media/background.90f032664fe978c8553d.jpg",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.195a86d6afa4470be2a5.jpg",
+    "static/media/artworks_react.png": "/portfolio/static/media/artworks_react.3f5570dd4e860e3a3c5d.png",
+    "static/media/codecool_final.png": "/portfolio/static/media/codecool_final.60e4883ef53b7acfbe17.png",
+    "static/media/codecool_test.png": "/portfolio/static/media/codecool_test.ff2c0e96bd6a8d2e6dfb.png",
+    "static/media/nodeJS.svg": "/portfolio/static/media/nodeJS.75fb513f1dca4a0de7f0.svg",
+    "static/media/ExpressJS.svg": "/portfolio/static/media/ExpressJS.5f99b35fea1d8672280f.svg",
+    "static/media/React.svg": "/portfolio/static/media/React.75b4b2aac18bbf0dbc6f.svg",
+    "static/media/CSS3.svg": "/portfolio/static/media/CSS3.c405a85882082c9ff886.svg",
+    "static/media/GitHub.svg": "/portfolio/static/media/GitHub.f4404f49a41ec2c6f1f6.svg",
+    "static/media/Javascript.svg": "/portfolio/static/media/Javascript.c98b777f89d6252a44b0.svg",
+    "static/media/Jest.svg": "/portfolio/static/media/Jest.62af6ea882daf55974f8.svg",
+    "static/media/MongoDB.svg": "/portfolio/static/media/MongoDB.b9ca6d8b7364c150869d.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/Docker.svg": "/portfolio/static/media/Docker.64501622e609890f98c5.svg",
+    "static/media/HTML5.svg": "/portfolio/static/media/HTML5.90093d9b9ed08b872fc9.svg",
+    "static/media/Git.svg": "/portfolio/static/media/Git.1364ee8367e4cedb8e52.svg",
+    "static/media/LinkedIn.svg": "/portfolio/static/media/LinkedIn.86f40c0cfcffec2cacf3.svg",
+    "main.cbd2219e.css.map": "/portfolio/static/css/main.cbd2219e.css.map",
+    "main.d2e9b522.js.map": "/portfolio/static/js/main.d2e9b522.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbd2219e.css",
+    "static/js/main.d2e9b522.js"
+  ]
+}
