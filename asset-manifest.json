@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cbd2219e.css",
-    "main.js": "/portfolio/static/js/main.d2e9b522.js",
+    "main.css": "/portfolio/static/css/main.06ab9bc3.css",
+    "main.js": "/portfolio/static/js/main.9c0a8fb8.js",
     "static/media/pizza_order.png": "/portfolio/static/media/pizza_order.600036491902d1514e57.png",
     "static/media/beerlak.png": "/portfolio/static/media/beerlak.e0de7f1b0581598051ee.png",
     "static/media/background.jpg": "/portfolio/static/media/background.90f032664fe978c8553d.jpg",
@@ -22,11 +22,11 @@
     "static/media/HTML5.svg": "/portfolio/static/media/HTML5.90093d9b9ed08b872fc9.svg",
     "static/media/Git.svg": "/portfolio/static/media/Git.1364ee8367e4cedb8e52.svg",
     "static/media/LinkedIn.svg": "/portfolio/static/media/LinkedIn.86f40c0cfcffec2cacf3.svg",
-    "main.cbd2219e.css.map": "/portfolio/static/css/main.cbd2219e.css.map",
-    "main.d2e9b522.js.map": "/portfolio/static/js/main.d2e9b522.js.map"
+    "main.06ab9bc3.css.map": "/portfolio/static/css/main.06ab9bc3.css.map",
+    "main.9c0a8fb8.js.map": "/portfolio/static/js/main.9c0a8fb8.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbd2219e.css",
-    "static/js/main.d2e9b522.js"
+    "static/css/main.06ab9bc3.css",
+    "static/js/main.9c0a8fb8.js"
   ]
 }
