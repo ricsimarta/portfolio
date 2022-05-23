@@ -1,0 +1,588 @@
+/* --- start of CSS reset --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+/* --- end of CSS reset --- */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+
+
+/* --- HEADER START --- */
+
+
+header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+
+  background-color: #000;
+  color: #fff;
+}
+
+header nav {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateX(5%);
+}
+
+header nav .navIcon.code,
+header nav .navIcon.mail,
+header menu .navIcon.code,
+header menu .navIcon.mail {
+  margin-top: 2px;
+}
+
+header nav button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  border: 1px solid rgba(0, 0, 0, 1);
+  padding: 4px;
+  transition: all 0.3s ease;
+}
+
+header nav button:hover,
+header menu button:hover {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: #fff;
+  color: #000;
+}
+
+header menu {
+  position: absolute;
+  top: 50px;
+  left: -200px;
+  display: none;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 20px;
+  background-color: #000;
+  padding: 20px;
+  width: 200px;
+  z-index: 3;
+
+  transition: all 0.5s ease;
+}
+
+header button.menuShow {
+  display: none;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+header menu:hover,
+header button.menuShow:focus+menu, 
+header button.menuShow:hover+menu {
+  left: 0;
+}
+
+header .menu {
+  font-size: 36px;
+}
+
+header menu button {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+header .links {
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+header .links button {
+  width: 28px;
+  height: 28px;
+}
+
+header .links img {
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+
+  transition: all 0.3s ease;
+}
+
+header .links button:hover {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+header .links button:hover>img {
+  filter: invert(100%);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+
+}
+
+header .links img.LinkedIn {
+  filter: invert(100%);
+  padding: 4px;
+
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+header .links button:hover>img.LinkedIn {
+  filter: invert(0%); 
+}
+
+@media screen and (max-width: 800px) {
+  header nav {
+    display: none;
+  }
+
+  header menu {
+    display: flex;
+  }
+
+  header button.menuShow {
+    display: flex;
+  }
+}
+
+/* --- HEADER END --- */
+
+.content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section {
+  width: max(100%, 320px);
+
+  color: #fff;
+}
+
+
+
+/* --- HOME START --- */
+
+section#Home {
+  padding: 15vmin;
+
+  color: #fff;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 10vmin;
+  line-height: 1.2em;
+
+  min-height: 100vh;
+}
+
+
+section#Home span.arrow {
+  position: absolute;
+  bottom: 100px;
+  right: 70px;
+  font-size: 48px;
+  color: #fff;
+  animation: arrowAnimation 0.8s infinite;
+}
+
+@keyframes arrowAnimation {
+  0% {
+    bottom: 100px;
+    right: 70px;
+  }
+
+  35% {
+    bottom: 80px;
+    right: 70px;
+  }
+
+  65% {
+    bottom: 80px;
+    right: 70px;
+  }
+
+  100% {
+    bottom: 100px;
+    right: 70px;
+  }
+}
+
+/* --- HOME END --- */
+
+
+
+
+
+/* --- ABOUT START --- */
+
+section#About {
+  position: relative;
+
+  margin-bottom: 200px;
+}
+
+section#About .aboutMe {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding: 20px;
+}
+
+img.aboutImage {
+  width: min(45vmin, 330px);
+  height: min(60vmin, 440px);
+  margin: 50px auto;
+
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+p.aboutText {
+  width: 80%;
+  max-width: 800px;
+
+  margin: 10% auto;
+  padding: 0 5%;
+
+  line-height: 1.5em;
+}
+
+section#About button.cv {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 200px;
+  height: 40px;
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+
+  transition: all 0.3s ease;
+}
+
+section#About button.cv:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* --- ABOUT END --- */
+
+
+
+/* --- SKILLS START --- */
+
+section#Skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5%;
+  justify-content: space-evenly;
+  scroll-margin-top: 50px;
+
+  margin-bottom: 200px;
+}
+
+section#Skills .hardSkills {
+  width: 80%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  color: #fff;
+}
+
+section#Skills .hardSkills p.hardSkillsText {
+  width: 100%;
+  margin-bottom: 40px;
+
+  font-size: 1.3rem;
+  text-decoration: underline;
+}
+
+section#Skills .hardSkillsIcons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  max-width: min(1000px, 80%);
+
+  padding: 20px;
+  margin: 0 auto;
+
+  color: #000;
+
+  background-color: rgb(231, 231, 231);
+}
+
+section#Skills .hardSkillsIcons .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+section#Skills img.logoImage {
+  width: 100px;
+}
+
+section#Skills .hardSkillsIcons .logo p.logoText {
+  font-size: 0.8em;
+}
+
+section#Skills .otherSkills {
+  width: max(45%, 400px);
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  margin-top: 100px;
+
+  color: #fff;
+}
+
+section#Skills .otherSkills ul {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 80%;
+  max-width: 350px;
+}
+
+section#Skills .otherSkills ul p {
+  font-size: 1.3rem;
+  line-height: 2.8rem;
+  text-decoration: underline;
+}
+
+section#Skills .otherSkills ul li {
+  margin-left: 15px;
+
+  font-size: 1rem;
+  line-height: 1.8rem;
+  text-decoration: unset;
+}
+
+/* --- SKILLS END --- */
+
+
+
+/* --- PORTFOLIO START --- */
+
+section#Portfolio {
+  scroll-margin-top: 70px;
+}
+
+p.portfolioText {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.websites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+
+  padding: 50px;
+}
+
+.website {
+  position: relative;
+  width: max(23vw, 320px);
+
+  margin-bottom: 200px;
+}
+
+.website p.websiteName {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+section#Portfolio .imageContainer {
+  z-index: 2;
+  position: relative;
+
+  width: 100%;
+  height: max(calc(23vw * 9 / 16), 180px)
+}
+
+section#Portfolio .imageContainer~.stacksContainer {
+  opacity: 0;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 2px);
+  padding: 12px;
+}
+
+section#Portfolio .imageContainer:hover~.stacksContainer {
+  opacity: 1;
+  top: max(calc((23vw * 9) / 16 + 30px), 210px);
+  transition: all 0.3s ease;
+
+  color: #000;
+
+  background-color: rgb(241, 241, 241);
+}
+
+section#Portfolio img.websiteImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+section#Portfolio .imageText {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+
+  padding: 12px;
+
+  color: #fff;
+  background-color: #000;
+
+  transition: all 0.3s ease;
+}
+
+section#Portfolio .imageText:hover {
+  opacity: 0.85;
+}
+
+section#Portfolio .imageText .buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+section#Portfolio .imageText .buttons button {
+  width: max-content;
+  border: 1px solid #fff;
+  border-radius: 5px;
+
+  padding: 10px;
+}
+
+section#Portfolio .imageContainer {
+  z-index: 1;
+}
+
+section#Portfolio .stacks {
+  padding: 10px;
+  text-align: center;
+}
+
+section#Portfolio .logoContainer {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+section#Portfolio .logoContainer .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#Portfolio img.logoImage {
+  width: 50px;
+}
+
+section#Portfolio .logoContainer .logo p.logoText {
+  font-size: 12px;
+}
+
+/* --- PORTFOLIO END --- */
