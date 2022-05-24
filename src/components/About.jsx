@@ -8,14 +8,12 @@ function About() {
         <img className='aboutImage' src={require(`./../images/profile.jpg`)} alt="profile" />
 
         <p className='aboutText'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates non, dolorem itaque unde molestias accusamus, nesciunt consectetur sint enim neque reprehenderit ab nihil iure officiis fuga commodi reiciendis quia iste.
-          Laborum voluptates reprehenderit hic vitae vero accusamus laboriosam rerum voluptatem pariatur possimus, deleniti aliquam quaerat? Tempora aut ut, eum ab exercitationem quis, explicabo cupiditate animi repudiandae delectus debitis eius ullam!
-          Temporibus eligendi recusandae cumque, nesciunt vel eius quis numquam sunt voluptatum quo necessitatibus enim laboriosam aliquid, nihil soluta sapiente unde voluptas culpa cupiditate sint esse. Maxime accusamus ipsam eius eveniet.
-          Eligendi magni et earum dolorem inventore. Pariatur in inventore quas nisi nobis, sapiente quam unde mollitia ad a, quaerat illum ea aperiam at assumenda ex id quod exercitationem tempora fugit.
-          Sint, maxime quaerat. Hic blanditiis exercitationem explicabo velit, repellat eveniet perspiciatis voluptates molestias, itaque animi assumenda, libero nulla veritatis a aperiam sint aliquam quibusdam saepe excepturi voluptate repudiandae adipisci natus.
+          <span>Hi! I am Richard Marta, a frontend developer born in Serbia, but living in Hungary.</span>
+          <span>I fell in love with coding in high school, where I was learning C# and old school HTML and CSS. After finishing high school in Serbia, I moved to Hungary at the age of 19. Thats when I drifted away from IT, and started working in other fields, but at the age of 26, I decided to get back on the road and started a bootcamp at Codecool.</span>
+          <span>After 4 months of tears and sweat, I became a full fledged frontend developer, with the knowledge of modern frameworks and practices, like Javascript, NodeJS, ExpressJS and React. Now I'm looking to start my path and build my career in the maze of frontend developing.</span>
+          <span>Outside of coding, I am deeply into hardware and software. I like to build PC's, install and maintain them, and even do smaller repairs as well. I enjoy playing games, watch movies and series, and learning to play guitar. I think of myself as a cheerful and motivated guy, and I think with a little humour, everything can be better,</span>
         </p>
       </div>
-
       <button className='cv' type='button' onClick={e => {
         e.preventDefault();
         window.open("https://drive.google.com/file/d/1zULNdiogHHV-st8hsTvUqSiKTIFC9jvz/view?usp=sharing");

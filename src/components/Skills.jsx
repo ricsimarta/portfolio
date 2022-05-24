@@ -17,7 +17,7 @@ function Skills() {
 
       <div className='otherSkills'>
         <ul>
-          <p>Other developer skills</p>
+          <p>Other developer skills:</p>
           <li>Wireframing</li>
           <li>UI/UX designing</li>
           <li>Clean coding practices</li>
@@ -25,7 +25,7 @@ function Skills() {
         </ul>
 
         <ul>
-          <p>Soft skills</p>
+          <p>Soft skills:</p>
           <li>Hard working</li>
           <li>Teamplayer</li>
           <li>Fast learner</li>
