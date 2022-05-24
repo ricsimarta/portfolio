@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   const icons = ["GitHub", "LinkedIn"]
-  const links = ["https://github.com/ricsimarta", "https://www.linkedin.com/in/rich%C3%A1rd-m%C3%A1rta-469830208/"]
+  const links = ["https://github.com/ricsimarta", "https://www.linkedin.com/in/ricsimarta/"]
 
   return (
     <header>
