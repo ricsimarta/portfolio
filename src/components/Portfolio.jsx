@@ -6,14 +6,14 @@ function Portfolio() {
     <section id='Portfolio'>
       <p className='portfolioText'>Here are some websites, that I've made:</p>
       <div className='websites'>
-        <Website 
+        {/* <Website 
           name="Codecool final exam design"
           img="codecool_final" 
           text="A simple design made for the Codecool final test." 
           logos={["HTML5", "CSS3", "Javascript"]} 
           link={"https://ricsimarta.github.io/codecool-final/"}
           gitLink={"https://github.com/ricsimarta/codecool-final"}
-        />
+        /> */}
 
         <Website
           name="Codecool beer webshop"
@@ -24,14 +24,14 @@ function Portfolio() {
           gitLink={"https://github.com/ricsimarta/beer-project-teamwork"}
         />
 
-        <Website
+        {/* <Website
           name="Codecool test exam design"
           img="codecool_test" 
           text={"A simple design made for the Codecool test exam."}
           logos={["HTML5", "CSS3", "Javascript"]} 
           link={"https://ricsimarta.github.io/w18-test-design/frontend/index.html"}
           gitLink={"https://github.com/ricsimarta/w18-test-design"}
-        />
+        /> */}
 
         <Website
           name="Codecool pizza order"
