@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Skills() {
-  const hardSkills = ["HTML5", "CSS3", "Javascript", "Git", "GitHub", "nodeJS", "ExpressJS", "React", "Jest", "MongoDB", "Docker"]
+  const hardSkills = ["HTML5", "CSS3", "Javascript", "Git", "GitHub", "nodeJS", "ExpressJS", "React", "Firebase", "Jest", "MongoDB", "Docker"]
   return (
     <section id='Skills'>
       <div className='hardSkills'>
