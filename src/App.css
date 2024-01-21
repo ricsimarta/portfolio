@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body {
+  background: center / cover url("./assets/background.jpg");
+  background-color: rgba(0, 0, 0, 0.15);
+  background-blend-mode: multiply;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 20px;
+
+  border: 1px solid white;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+
+  color: #fff;
+}
+
+div.container h2 {
+  font-size: 2em;
+  letter-spacing: -0.015em;
+}
+
+div.container p {
+  max-width: 600px;
+
+  line-height: 1.5em;
+}
