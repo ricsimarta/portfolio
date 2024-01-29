@@ -1,0 +1,9 @@
+section.about {
+  background-image: url("/assets/about-bg.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+
+  background-color: rgb(63, 62, 62);
+  background-blend-mode: multiply;
+}

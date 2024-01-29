@@ -1,0 +1,9 @@
+section.skills {
+  background-image: url("/assets/skills-bg.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+
+  background-color: rgb(40, 39, 39);
+  background-blend-mode: multiply;
+}

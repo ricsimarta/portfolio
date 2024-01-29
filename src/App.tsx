@@ -1,22 +1,18 @@
-import './App.css'
-import Header from './components/Header/Header'
+import './App.css';
+import Landing from './components/Landing/Landing';
+import Header from './components/Header/Header';
+import About from './components/About/About';
+import Arrow from './components/Arrow/Arrow';
+import Skills from './components/Skills/Skills';
 
-function App() {
-
+export default function App() {
   return (
     <>
-      <Header />    
-        <main>
-
-        <div className='container'>
-          <h2>Richard Marta</h2>
-          <h3>Frontend Developer</h3>
-
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis commodi aliquid tempore adipisci, rem saepe distinctio aspernatur doloribus quam nemo?</p>
-        </div>
-      </main>
+      <Header />
+      <Arrow />
+      <Landing />
+      <About />
+      <Skills />
     </>
   )
 }
-
-export default App

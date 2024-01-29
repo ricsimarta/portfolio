@@ -1,0 +1,44 @@
+section.landing {
+  min-height: 100vh;
+
+  background-image: url("/assets/landing-bg.jpg");
+  background-attachment: fixed;
+  
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+
+  padding-top: 100px;
+}
+
+section.landing div.container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  padding: 20px;
+      
+  color: #fff;
+}
+
+section.landing img {
+  max-width: 200px;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+
+section.landing h2 {
+  font-size: 2.2em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+section.landing h2 span {
+  font-size: 1.3em;
+}
+
+section.landing .landing-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
