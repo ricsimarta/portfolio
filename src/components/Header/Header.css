@@ -10,10 +10,10 @@ header {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
 
-  padding-right: 20px;
+  padding: 0 20px;
   border-bottom: 1px solid #fff;
 
   color: #fff;
@@ -25,16 +25,78 @@ header {
   transition: all 0.3s ease;
 
   animation: slide-from-top 0.5s ease;
+
+  box-shadow: 0 0 150px 20px #000;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 header:hover {
   height: 80px;
   
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3); */
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-header span {
+header div.links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header div.links span {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+
+  transition: all 0.3s ease;
+
+  cursor: pointer;
+}
+
+header div.links span:hover {
+  background-color: #fff;
+}
+
+header div.links span img {
+  width: 30px;
+  height: 30px;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+  
+  transition: all 0.3s ease;
+
+  filter: invert(100%);
+}
+
+header div.links span:hover img {
+  filter: invert(0);
+}
+
+header div.links span.linkedin img {
+  width: 23px;
+  height: 23px;
+  
+  filter: invert(90%);
+}
+
+header div.links span.linkedin:hover img {
+  filter: invert(0);
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: end;
+  align-items: center;
+}
+
+header nav > span {
   padding: 10px;
 
   cursor: pointer;
@@ -42,9 +104,38 @@ header span {
   transition: all 0.3s ease;
 }
 
-header span:hover {
+header nav > span:hover {
   background-color: #fff;
   color: #000;
+}
+
+header nav > span.lang {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+header nav > span.lang::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: -10px;
+
+  transform: translateY(-50%);
+
+  width: 100%;
+  height: 30px;
+
+  border-left: 1px solid #fff;
+
+  pointer-events: none;
+}
+
+header nav > span.lang span.selected {
+  font-weight: 700;
 }
 
 @media (pointer: coarse) {

@@ -4,6 +4,72 @@ section.skills {
   background-position: top;
   background-size: cover;
 
-  background-color: rgb(40, 39, 39);
+  background-color: rgba(40, 39, 39, 0.8);
   background-blend-mode: multiply;
+
+  box-shadow: inset 0 0 150px 20px #000;
+}
+
+div.skills {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
+  width: 100%;
+}
+
+div.skill {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 360px;
+  border: 1px solid #fff;
+
+  transition: all 0.3s ease;
+
+  overflow: hidden;
+
+  padding-right: 10px;
+}
+
+div.skill:nth-of-type(9),
+div.skill:nth-of-type(10) {
+  width: fit-content;
+  padding-right: unset;
+}
+
+div.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  border-right: 1px solid #fff;
+  padding-bottom: 10px;
+}
+
+div.skill img {
+  width: 100px;
+  
+  padding: 10px;
+
+  background-color: #fff;
+}
+
+div.skill ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  padding: 12px 6px;
+  font-size: 0.9em;
+}
+
+
+div.skill li {
+  width: 100%;
+  max-width: 200px;
+
+  list-style-type: none;
 }

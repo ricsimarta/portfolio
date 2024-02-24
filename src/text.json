@@ -1,0 +1,53 @@
+{
+  "eng": {
+    "header": {
+      "about": "About",
+      "skills": "Skills",
+      "contact": "Contact"
+    },
+    "landing": {
+      "name": "Richard Marta",
+      "title": "Frontend Developer",
+      "texts": [
+        "Hi! I am Richard Marta, a frontend developer based in Budapest, Hungary.",
+        "I've finished the frontend course of Codecool in May of 2022, and been working on the very same course as a mentor since then.",
+        "I have advanced knowledge in the field of frontend development, especially in CSS, Javascript and React."
+      ],
+      "buttonText": "Check out my CV!"
+    },
+    "about": {
+      "title": "About me",
+      "texts": [
+        "I was born in 1995 in Serbia, and grew up here. After finishing high school, I've moved to Hungary at the age of 19.",
+        "I am deeply into IT since I was a child. I am the family tech support guy for better or worse.  I wrote my first line of code at the age of 10 <span class='italic off'>(it was a terrible, copied HTML from some websites source)</span>, and from then, my passion for coding has begun.",
+        "I learnt algorithmic thinking in high school, where I was intruced to <span class='italic'>real</span> coding, in the form of C#. The greatest achievement I have in it is that I've made a server-client based TCP/IP chat application for graduation <span class='italic off'>(in Serbia, we've had to make a kind of thesis for successful graduation from high school)</span>.",
+        "After moving to Hungary, I couldn't start working as a developer, so coding got pushed to the side for a few years. I've tried myself out in different fields. I've worked for 2 years in CNC machining, as machine operator. After that, I started my carreer in commerce, and reached store manager position in 4 years.",
+        "But I always wanted to get back to coding. So I joined a bootcamp at Codecool, where I learnt the basics of frontend development. After finishing the course, I've got a job offer to work as a mentor on the frontend courses. Since then, I am working as a frontend mentor, and also freelancing as a developer.",
+        "In my free time, I enjoy building and repairing computers, playing digital and board games, watching movies and series, learning to play the guitar, and spend times with my friends."
+      ],
+      "buttonText": "Contact me!"
+    }
+  },
+  "hun": {
+    "header": {
+      "about": "Rólam",
+      "skills": "Készségek",
+      "contact": "Kapcsolat"
+    },
+    "landing": {
+      "name": "Márta Richárd",
+      "title": "Frontend fejlesztő",
+      "texts": [
+        "lorem"
+      ],
+      "buttonText": "Nézd meg a CV-m!"
+    },
+    "about": {
+      "title": "Rólam",
+      "texts": [
+        "lorem"
+      ],
+      "buttonText": "Vedd fel a kapcsolatot!"
+    }
+  } 
+}

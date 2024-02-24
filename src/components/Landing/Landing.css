@@ -3,20 +3,35 @@ section.landing {
 
   background-image: url("/assets/landing-bg.jpg");
   background-attachment: fixed;
-  
+
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
 
   padding-top: 100px;
+  position: relative;
+
+  box-shadow: inset 0 0 150px 20px #000;
 }
 
-section.landing div.container{
+section.landing div.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: #000000;
+
+  transition: all 0.01s ease;
+}
+
+section.landing div.container {
   display: flex;
   flex-direction: column;
   gap: 30px;
 
   padding: 20px;
-      
+
   color: #fff;
 }
 
@@ -41,4 +56,15 @@ section.landing .landing-text {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+div.cv {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  max-width: 600px;
+  height: calc(600px * 1.414);
 }
